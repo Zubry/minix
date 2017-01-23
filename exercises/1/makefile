@@ -16,7 +16,7 @@ math: math_lib.o useLib.o libmath.a
 	$(CC) math_lib.o useLib.o libmath.a $(cflags) -o math
 
 libmath.a: math_lib.o
-	ar cd libmath.a math_lib.o
+	ar cr libmath.a math_lib.o
 
 math_lib.o: math_lib.c
 	$(CC) -c math_lib.c $(cflags)
